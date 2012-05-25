@@ -17,4 +17,11 @@ $(document).bind("mobileinit", function(){
 		console.log("absUrl: " + data.absUrl);
 		console.log("dataUrl: " + data.dataUrl);
 	});
+	$("#homePage").live("pageshow", function(event, ui){
+		if(ui.prevPage.attr("id")=="secondPage"){
+			#("#info").append("Second Page에서 이동되었습니다. <br/>");
+		} else if(ui.prevPage.attr("id")=="thirdPage"){
+			#("#info").append("Third Page에서 이동되었습니다. <br/>");
+		}
+	});
 });
