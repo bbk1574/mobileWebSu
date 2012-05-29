@@ -25,3 +25,17 @@ $(document).bind("mobileinit", function(){
 		}
 	});
 });
+$(function() {
+	if(window.orientation == 0) {
+		$("#backImg").attr("src", "../../image/big-image-portrait.png");
+	} else {
+		$("#backImg").attr("src", "../../image/big-image-landscape.png");
+	}
+	$(window).bind("orientationchange", function(event) {
+		if(event.orientation == "portrait") {
+			$("#backImg").attr("src", "../../image/big-image-portrait.png");
+		} else {
+			$("#backImg").attr("src", "../../image/big-image-landscape.png");
+		}
+	});
+});
