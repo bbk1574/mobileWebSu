@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,
+			 maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>jquery mobile</title>
+<link rel="shortcut icon" href="../../image/icon.png">
+<link rel="apple-touch-icon" href="../../image/icon.png">
+
+<link rel="stylesheet" type="text/css" href="../lib/jquery.mobile-1.1.0.css">
+<script type="text/javascript" src="../lib/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="../lib/jquery.mobile-1.1.0.js"></script>
+</head>
+<body>
+	<div id="home" data-role="page">
+		<div data-role="header" data-position="fiexd" data-theme="b">
+			<h1>기본테마</h1>
+			<a href="#" data-icon="arrow-l">Prev</a>
+			<a href="#" data-icon="arrow-r" data-iconpos="right">Next</a>
+		</div>
+		<div data-role="content">
+			<table style="width: 100%">
+				<tr>
+					<td><a href="#" data-role="button" data-theme="e">버튼</a></td>
+					<td><a href="#" data-role="button" data-theme="d">버튼</a></td>
+				</tr>
+			</table>
+			<div data-role="collapsible" data-theme="c" data-content-theme="e">
+				<h3>I'm a header</h3>
+				<p>I'm the collapsible content. By default I'm closed, 
+					but you can click the header to open me.</p>
+			</div>
+
+			<ul data-role="listview" data-inset="true" data-split-icon="delete" 
+				data-count-theme="b" data-divider-theme="c" data-filter-theme="d"
+				data-theme="e">
+				<li data-theme="d">  				
+					<a href="#">Item A</a>
+					<a href="#">Split Icon Description</a>
+				</li>
+				<li data-theme="d">  				
+					<a href="#">Item B</a>
+					<a href="#">Split Icon Description</a>
+				</li>
+			</ul>
+
+			<input id="amount" type="range" name="amount" 
+					min="0" max="100" value="50" data-theme="b" data-track-theme="c"/>
+    	</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="grid">Summary</a></li>
+					<li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+					<li><a href="#" data-icon="gear">Setup</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+	</body>
+</html>
