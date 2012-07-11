@@ -1,9 +1,9 @@
 Ext.application({
 	name: "MyApp",
 	launch: function(){
-		var btn1= Ext.create("Button", {text: "버튼1"});
-		var btn2= Ext.create("Button", {text: "버튼2"});
-		var btn3= Ext.create("Button", {text: "버튼3"});
+		var btn1= Ext.create("Ext.Button", {text: "버튼1"});
+		var btn2= Ext.create("Ext.Button", {text: "버튼2"});
+		var btn3= Ext.create("Ext.Button", {text: "버튼3"});
 		
 		var panel1 = Ext.create("Ext.Panel", {
 			layout: {type:"hbox", align:"middle", pack:"justify"},
@@ -11,9 +11,9 @@ Ext.application({
 			style: "background-color:#00ff00"			
 		});
 		
-		var btn4= Ext.create("Button", {text: "버튼1"});
-		var btn5= Ext.create("Button", {text: "버튼2"});
-		var btn6= Ext.create("Button", {text: "버튼3"});
+		var btn4= Ext.create("Ext.Button", {text: "버튼1"});
+		var btn5= Ext.create("Ext.Button", {text: "버튼2"});
+		var btn6= Ext.create("Ext.Button", {text: "버튼3"});
 		
 		var panel2 = Ext.create("Ext.Panel", {
 			layout: {type:"hbox", align:"middle", pack:"justify"},
