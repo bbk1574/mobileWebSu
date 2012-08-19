@@ -30,7 +30,7 @@ Ext.application({
 					Ext.Viewport.setMasked(false);
 					if(result.loginResult == "success"){
 						Ext.Msg.alert("알림", "로그인 성공", Ext.emptyFn);
-					} else if(result.loginResult == fall){
+					} else if(result.loginResult == "fail"){
 						Ext.Msg.alert("알림", "로그인 실패: " + result.message, Ext.emptyFn);
 					}
 				},
