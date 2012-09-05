@@ -21,6 +21,8 @@ Ext.application({
 		
 		var rootPanel = Ext.create("Ext.Panel", {
 			items: [panel1, panel2]
+			
+			
 		});
 		Ext.Viewport.add(rootPanel);
 	}
