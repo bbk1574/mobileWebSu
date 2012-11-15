@@ -1,4 +1,4 @@
-<%@ page contentType="text/javascript;charset=EUC-KR"%>
+<%@ page contentType="text/javascript;charset=utf-8"%>
 
 <% String serverKey = request.getParameter("serverKey"); %>
 
@@ -9,22 +9,22 @@
 			"data": [
 				{
 					"pno": "p1",
-					"pname": "°¶·°½Γ A",
+					"pname": "κ°¤λ­μ‹ A",
 					"pimage": "phone01.png"
 				},
 				{
 					"pno": "p2",
-					"pname": "°¶·°½Γ Ώ΅ΐΜ½Ί",
+					"pname": "κ°¤λ­μ‹ μ—μ΄μ¤",
 					"pimage": "phone02.png"
 				},
 				{
 					"pno": "p3",
-					"pname": "°¶·°½Γ ΑφΏΐ",
+					"pname": "κ°¤λ­μ‹ μ§€μ¤",
 					"pimage": "phone03.png"
 				},
 				{
 					"pno": "p4",
-					"pname": "°¶·°½Γ Θ£ΗΙ",
+					"pname": "κ°¤λ­μ‹ νΈν•€",
 					"pimage": "phone04.png"
 				},
 				

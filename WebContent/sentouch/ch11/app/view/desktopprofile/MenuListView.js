@@ -5,7 +5,7 @@ Ext.define("MyApp.view.desktopprofile.MenuListView", {
 	config: {
 		itemTpl: "{text}",
 		store: {
-			fields: ["text"],
+			fields: [ "text" ],
 			data: [
 				{text: "Home"},
 				{text: "Login"},
@@ -14,4 +14,4 @@ Ext.define("MyApp.view.desktopprofile.MenuListView", {
 		},
 		style: "background-color:#ff9900"
 	}
-})
+});

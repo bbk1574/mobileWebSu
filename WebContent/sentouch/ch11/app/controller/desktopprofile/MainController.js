@@ -1,18 +1,19 @@
-Ext.define("MyApp.controller.desktopprofile.MainController", {
-	extend: "Ext.app.Controller",
-	
+Ext.define('MyApp.controller.desktopprofile.MainController', {
+	extend: 'Ext.app.Controller',  
+		
 	config: {
 		refs: {
 			main: "main"
 		},
 		control: {
 			"main menulistview": {
-				itemtap: "onMenuListViewItemTap"
+				itemtap: "onMenuListViewOnItemTap"
 			}
 		}
 	},
-	onMenuListViewItemTap: function(dataview, index, target, record, e, eOpts){
-		switch(index){
+
+	onMenuListViewOnItemTap: function(dataview, index, target, record, e, eOpts ) {
+		switch(index) {
 			case 0:
 				this.getMain().setActiveItem(0);
 				break;
@@ -24,4 +25,4 @@ Ext.define("MyApp.controller.desktopprofile.MainController", {
 				break;
 		}
 	}
-})
+});

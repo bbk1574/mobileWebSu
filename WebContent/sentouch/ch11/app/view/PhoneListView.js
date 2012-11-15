@@ -1,20 +1,20 @@
 Ext.define("MyApp.view.PhoneListView", {
-	extend: "Ext.Panel",
-	xtype: "phonelistview",
-	requires: ["Ext.TitleBar", "Ext.dataview.List"],
-	config: {
+	extend:"Ext.Panel",
+	xtype:"phonelistview",
+	requires: [ "Ext.TitleBar", "Ext.dataview.List" ],
+	config:{
 		title: "Phone",
 		iconCls: "settings",
 		layout: "fit",
-		items: [
+		items:[
 			{
-				xtype: "titlebar",
-				docked: "top",
+				xtype:"titlebar",
+				docked:"top",
 				title:"Phone List"
 			},
 			{
-				xtype: "list",
-				itemTpl: [
+				xtype:"list",
+				itemTpl:[
 					"<div style='width:100%;'>",
 						"<table  style='width:100%;'>",
 							"<tr>",
@@ -29,5 +29,5 @@ Ext.define("MyApp.view.PhoneListView", {
 				]
 			}
 		]
-	}
-})
+    }
+});

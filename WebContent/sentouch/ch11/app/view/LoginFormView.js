@@ -1,23 +1,23 @@
 Ext.define("MyApp.view.LoginFormView", {
-	extend: "Ext.form.Panel",
-	xtype: "loginformview",
-	id: "loginformview",
+	extend: "Ext.form.Panel",	
+	xtype: "loginformview",	
+	id: "loginformview",		
 	requires: [
-		"Ext.form.FieldSet",
-		"Ext.field.Text",
-		"Ext.field.Password"
-	],
+	    "Ext.form.FieldSet",
+	    "Ext.field.Text",
+	    "Ext.field.Password"
+	],	
 	config: {
 		title: "Login",
-		iconCls: "user",
+		iconCls: "user",		
 		items: [
 			{
 				xtype: "fieldset",
 				title: "Login",
-				instructions: "(mid and mpassword is required)",
+				instructions: "(mid and mpassword is required)",				
 				items: [
-					{xtype: "textfield", name: "id", label: "Id"},
-					{xtype: "passwordfield", name: "password", label: "Password" }
+					{ xtype: "textfield", 	name: "id", label: "Id" },
+					{ xtype: "passwordfield", name: "password", label: "Password" }
 				]
 			},
 			{
