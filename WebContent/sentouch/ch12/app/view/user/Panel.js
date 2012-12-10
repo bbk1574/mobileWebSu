@@ -2,7 +2,7 @@ Ext.define("Phonem.view.user.Panel", {
 	extend: "Ext.Panel",
 	xtype: "userpanel",
 	requires: ["Ext.TitleBar"],
-	comfig: {
+	config: {
 		layout: "card",
 		items: [
 			{

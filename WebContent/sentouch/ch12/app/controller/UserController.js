@@ -37,16 +37,17 @@ Ext.define('Phonem.controller.UserController', {
     	Ext.Viewport.setActiveItem(mainController.getMain());
     },
     onBtnLoginTap: function(btn, event) {
-    	Ext.Viewpoet.setMasked({xtype: 'loadmask', message: '로그인...'});
+    	Ext.Viewport.setMasked({xtype: 'loadmask', message: '로그인...'});
     	Ext.data.JsonP.request({
-    		url: "http://172.16.1.129:8080/mobileWebSu/sentouch/ch12/data/user_login.jsp",
+    		url: "http://172.16.1.10:8080/mobileWebSu/sentouch/ch12/data/user_login.jsp",
     		params: {
-    			uid: this.getUserloginForm().query("[name='uid']")[0].getValue(),
+    			uid: this.getUserLoginForm().query("[name='uid']")[0].getValue(),
     			upassword: this.getUserLoginForm().query("[name='upassword]")[0].getValue()
     		},
     		callbackKey: "serverKey",
     		scope:this,
     		success: function(result){
+    			
     			Ext.Viewport.setMasked(false);
     			if(result.message == "success"){
     				Ext.Msg.alert("알림", "로그인 성공");

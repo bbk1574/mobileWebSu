@@ -10,16 +10,14 @@ Ext.application({
         'Ext.MessageBox'
     ],
 	
-    models: ["User"//, "Phone"
-    ],
-
- //   stores: ["PhoneStore"],
+    models: ["Phone", "User"],
+	stores: ["PhoneStore"],
     
     controllers: ["UserController", "PhoneController", "MainController"],
  
     views: [
-    	'Main', "user.Panel", "user.LoginForm"
-    	//"phone.Panel", "phone.List", "phone.Form", "phone.Detail"
+    	'Main', "user.Panel", "user.LoginForm",
+    	"phone.Panel", "phone.List", "phone.Form", "phone.Detail"
     ],
 
     icon: {

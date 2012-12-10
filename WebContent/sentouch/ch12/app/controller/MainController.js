@@ -40,20 +40,20 @@ Ext.define('Phonem.controller.MainController', {
     		if(this.getBtnLoginForm() != null) {
     			this.getBtnLoginForm().show();
     		}
-    		if(this.getBtnLogout() == null){
+    		if(this.getBtnLogout() != null){
     			this.getBtnLogout().hide();
     		}
-    		if(this.getBtnPhoneList() == null){
+    		if(this.getBtnPhoneList() != null){
     			this.getBtnPhoneList().setDisabled(true);
     		}
     	} else {
     		if(this.getBtnLoginForm() != null) {
     			this.getBtnLoginForm().hide();
     		}
-    		if(this.getBtnLogout() == null){
+    		if(this.getBtnLogout() != null){
     			this.getBtnLogout().show();
     		}
-    		if(this.getBtnPhoneList() == null){
+    		if(this.getBtnPhoneList() != null){
     			this.getBtnPhoneList().setDisabled(false);
     		}
     	}
